@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QR Codes d'Adèle et Tom</title>
     <link rel="shortcut icon" href="images/heart-favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="displayCounter()" >
     <!-- <p style="font: size 40px;">Coucou bibou que j'aime</p> -->
 
     <button type="button" class="collapsible">QR Code Adèle</button>
@@ -22,5 +22,28 @@
         <img src="images/qrcode_tom_crop.jpg" alt="le QR code de Tom">
     </div>
 
+    <button type="button" class="counter" id="counterButton" onclick="incrementCounter()">Click this button to increment the counter</button>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+
+    <!-- Initialize Firebase -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/init.js"></script> -->
 </body>
 </html>
