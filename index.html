@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- <script src="script.js" type="text/javascript"></script> -->
-    <script src="passwordProtect.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="dbscript.js" type="text/javascript"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cette page est protégée par mot de passe</title>
+    <title>TLB</title>
+    <link rel="shortcut icon" href="images/heart-favicon.ico" type="image/x-icon">
 </head>
-<body>
-    
+<body onload="displayCounter()" >
+
+    <H3>Qu'aimeriez-vous voir ?</H3>
+
+    <ul>
+        <li><a href="recettes.html">Des recettes de cuisine</a></li>
+        <li><a href="covid.html">Des QR codes de passes vaccinaux</a></li>
+    </ul>
+
+    <!-- <button type="button" class="collapsible">QR Code Adèle</button>
+    <div class="content">
+        <img src="images/qrcode_adele_crop.jpg" alt="le QR code d'Adèle" width="260" height="260">
+    </div>
+
+    <button type="button" class="collapsible">QR Code Tom</button>
+    <div class="content">
+        <img src="images/qrcode_tom_crop.jpg" alt="le QR code de Tom" width="260" height="260">
+    </div> -->
+
+    <button type="button" class="counter" id="counterButton" onclick="incrementCounter()">Click this button to increment the visit counter</button>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+
+    <!-- Initialize Firebase -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/init.js"></script> -->
 </body>
 </html>
